@@ -93,6 +93,10 @@ directory_request = Faraday.get(directory_url)
 Some APIs may provide hypermedia envelopes and you should use those where
 available. 
 
+## Examples
+
+I used this in the [`automatic-client`](https://rubygems.org/gems/automatic-client) Gem to handle the small set of available routes. These are defined in the [`Automatic::Client`](https://github.com/nateklaiber/automatic-client/blob/ef58709f93c8abcdaadb16be1eed8ec33989c05f/lib/automatic/client.rb) and available via the `routes` class method.
+
 ## Contributing
 
 1. Fork it ( http://github.com/<my-github-username>/restless_router/fork )
