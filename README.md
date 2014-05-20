@@ -1,5 +1,7 @@
 # RestlessRouter
 
+[![Build Status](https://travis-ci.org/nateklaiber/restless_router.svg?branch=v0.0.1)](https://travis-ci.org/nateklaiber/restless_router)
+
 This helps fill the gap where web services only provide their routing
 via external documentation. In order to prevent URL building scattered
 throughout your client, you can define the routes up-front via fully
