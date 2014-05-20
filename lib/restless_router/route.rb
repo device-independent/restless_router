@@ -19,7 +19,7 @@ module RestlessRouter
     #
     #   # With a templated route
     #   route = RestlessRouter::Route.new('search', 'http://example.com/search{?q}', templated: true)
-    #   
+    #
     #   route.name
     #   # => 'search'
     #
@@ -45,6 +45,14 @@ module RestlessRouter
     # @return [String] Name of the route
     def name
       @name
+    end
+
+    # Return the specified path of the Route. This
+    # is either a fully qualified URL or a URI Template.
+    #
+    # @return [String] Path of the route
+    def path
+      @path
     end
 
     # Returns the URL for the route. If it's templated,

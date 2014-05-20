@@ -14,6 +14,10 @@ describe RestlessRouter::Route do
       expect(subject.name).to eq('home')
     end
 
+    it "returns the #path" do
+      expect(subject.path).to eq('http://www.example.com')
+    end
+
     it "returns the #url_for" do
       expect(subject.url_for).to eq('http://www.example.com')
     end
@@ -27,7 +31,11 @@ describe RestlessRouter::Route do
     it "returns the expanded #url_for" do
       expect(subject.url_for(q: 'search-term')).to eq('http://www.example.com/search?q=search-term')
     end
-    
+
+    it "returns the raw #path" do
+      expect(subject.path).to eq('http://www.example.com/search{?q}')
+    end
+
     it "returns the expanded #url_for with no expansions" do
       expect(subject.url_for).to eq('http://www.example.com/search')
     end
