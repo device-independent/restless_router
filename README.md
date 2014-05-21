@@ -59,7 +59,7 @@ directory_url   = directory_route.url_for
 
 # Look up the User Detail route
 user_detail_route = routes.route_for('http://example.com/rels/user-detail')
-user_defail_url   = user_detail_route.url_for(id: '1234')
+user_detail_url   = user_detail_route.url_for(id: '1234')
 # => 'https://example.com/users/1234'
 ```
 
