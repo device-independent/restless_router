@@ -22,6 +22,8 @@ module RestlessRouter
     #
     def initialize
       @routes = []
+
+      yield(self) if block_given?
     end
 
     # Define each for use with Enumerable

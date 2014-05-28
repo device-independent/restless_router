@@ -12,6 +12,17 @@ describe RestlessRouter::Routes do
     route_definitions.each { |route| subject.add_route(route) }
   end
 
+  context "Route adding DSL" do
+    it "allows you to add a route" do
+      routes = described_class.new do |route|
+        route.add_route(home_route)
+        route.add_route(search_route)
+      end
+
+      expect(routes.count).to eql(2)
+    end
+  end
+
   context "without routes" do
     let(:route_definitions) { [] }
 
