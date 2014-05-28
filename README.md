@@ -101,7 +101,7 @@ I used this in the [`automatic-client`](https://rubygems.org/gems/automatic-clie
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/restless_router/fork )
+1. Fork it ( http://github.com/nateklaiber/restless_router/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
