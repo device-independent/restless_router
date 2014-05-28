@@ -50,6 +50,8 @@ Once the routes have been defined, you may **lookup the routes** by their
 Relationship](http://www.iana.org/assignments/link-relations/link-relations.xhtml)
 or _Custom Link Relationships_.
 
+> Applications that don't wish to register a relation type can use an extension relation type, which is a URI that uniquely identifies the relation type. [Extension Relation Types](http://tools.ietf.org/html/rfc5988#section-4.2)
+
 ```ruby
 
 # Look up the Directory route
